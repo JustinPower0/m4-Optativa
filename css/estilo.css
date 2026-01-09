@@ -1,0 +1,239 @@
+/* =========================
+   RESET BÁSICO
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    /* permite salto de línea si la pantalla se reduce */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* permite que h1 o imagen salten de línea */
+}
+
+header img {
+    height: 80px;
+    margin-bottom: 10px;
+    /* espacio entre imagen y menú en tablet/móvil */
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* MENÚ PRINCIPAL */
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    /* permite saltos de línea automáticos */
+    margin-top: 10px;
+    /* espacio entre imagen y menú */
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #388e3c;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul.menu li a:hover {
+    background-color: #66bb6a;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background: #e8f5e9;
+    padding: 10px;
+    border-left: 5px solid #2e7d32;
+    margin-top: 10px;
+}
+
+article img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* LISTAS Y TABLAS */
+ul,
+ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #c8e6c9;
+}
+
+/* ENLACES CON IMÁGENES */
+a img {
+    border: 3px solid #2e7d32;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 5px solid #66bb6a;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #66bb6a;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    margin: 0 5px;
+}
+
+footer .social img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+/* MÓVIL */
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        margin-top: 10px;
+    }
+
+    /* Abrir menú con checkbox */
+    .menu-checkbox:checked~nav ul.menu {
+        max-height: 1000px;
+        /* suficiente para todos los enlaces */
+    }
+
+    nav ul.menu li {
+        width: 100%;
+        margin-bottom: 10px;
+        /* espacio vertical entre botones */
+    }
+
+    nav ul.menu li a {
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+    }
+}
