@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Ayuntamiento</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-left">
+            <img src="img/mollet.png" alt="Ayuntamiento de Mollet del Vallès">
+            <h1>Ayuntamiento de Mollet del Vallès</h1>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-toggle">☰</label>
+
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="index1.html">Inicio</a></li>
+                <li><a href="index2.html">Contacto</a></li>
+                <li><a href="index3.html">Galería</a></li>
+                <li><a href="index4.html">Medidas Ambientales</a></li>
+                <li><a href="index5.html">UE y Agenda 2030</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- DATOS DE CONTACTO -->
+        <section>
+            <h2>Datos de contacto</h2>
+
+            <p><q>La protección del medio ambiente es tarea de todos.</q></p>
+
+            <ul>
+                <li><strong>Dirección:</strong> Plaça Major, 1, 08100 Mollet del Vallès</li>
+                <li><strong>Teléfono:</strong> 93 570 00 00</li>
+                <li><strong>Email:</strong>
+                    <a href="mailto:informacio@molletvalles.cat">informacio@molletvalles.cat</a>
+                </li>
+                <li><strong>Web oficial:</strong>
+                    <a href="https://www.molletvalles.cat" target="_blank">www.molletvalles.cat</a>
+                </li>
+                <li><strong>Redes sociales:</strong>
+                    <ol>
+                        <li><a href="https://www.instagram.com/molletvalles" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/molletvalles" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/molletvalles" target="_blank">Facebook</a></li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h3>Horario de atención</h3>
+
+            <table>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+                <tr>
+                    <td>Lunes - Viernes</td>
+                    <td>08:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td>Cerrado</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- MAPA -->
+        <section>
+            <h2>Ubicación del Ayuntamiento</h2>
+
+            <p>
+                <a href="https://www.google.com/maps/place/Ajuntament+de+Mollet+del+Vall%C3%A8s/@41.5353462,2.2086455,16z"
+                    target="_blank">
+                    Ver Ayuntamiento de Mollet del Vallès en Google Maps
+                </a>
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.955996975708!2d2.2086455!3d41.5353462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bed817cd7e95%3A0xad5c6d41fa4a704a!2sAjuntament%20de%20Mollet%20del%20Vall%C3%A8s!5e0!3m2!1ses!2ses!4v1706800000000"
+                width="300" height="200" style="border:0;" allowfullscreen loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section>
+            <h2 id="formulario">Formulario de denuncias</h2>
+
+            <dl>
+                <dt>Denuncia</dt>
+                <dd>Comunicación de actividades que dañan el medio ambiente.</dd>
+            </dl>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br><br>
+
+                <label>Lugar de la incidencia:</label><br>
+                <input type="text" name="lugar"><br><br>
+
+                <label>Tipo de actividad:</label><br>
+                <select name="tipo">
+                    <option>Vertidos ilegales</option>
+                    <option>Ruidos</option>
+                    <option>Quema de residuos</option>
+                    <option>Otros</option>
+                </select><br><br>
+
+                <label>Descripción:</label><br>
+                <textarea name="descripcion" rows="4" cols="40"></textarea><br><br>
+
+                <label>Subir archivo:</label><br>
+                <input type="file" name="archivo"><br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </form>
+
+            <p><a href="#menu">Volver arriba</a></p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Ayuntamiento de Mollet del Vallès</p>
+        <p>
+            <a href="https://www.molletvalles.cat" target="_blank">Sitio oficial</a> |
+            <a href="mailto:info@molletvalles.cat">Contacto</a>
+        </p>
+        <div class="social">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
