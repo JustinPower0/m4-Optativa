@@ -3,93 +3,167 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Consejos de Sostenibilidad</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mollet del Vallès | Consejos Sostenibles</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Consejos para Empresas y Ciudadanos</h1>
+    <header class="site-header">
+        <div class="header-left">
+            <img src="img/mollet.png" alt="Escudo Ayuntamiento de Mollet del Vallès">
+            <h1>Ayuntamiento de Mollet del Vallès</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-toggle">☰</label>
+        <nav class="main-nav">
+            <ul class="menu">
+                <li><a href="index1.html">Inicio</a></li>
+                <li><a href="index2.html">Contacto</a></li>
+                <li><a href="index3.html">Galería</a></li>
+                <li><a href="index4.html">Medidas</a></li>
+                <li><a href="index5.html">Consejos</a></li>
+                <li><a href="index6.html">UE y Agenda 2030</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index1.html">Volver al inicio</a>
-    </nav>
-
     <main>
-
         <section>
-            <h2>Empresas</h2>
+            <h2>Consejos para Empresas</h2>
+            <div class="card-grid">
 
-            <h3>ASG (Ambiental, Social y Gobernanza)</h3>
-            <p>
-                El enfoque ASG evalúa el impacto ambiental, social y ético de las empresas.
-            </p>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad/educacion-y-sensibilizacion-ambiental"
+                            target="_blank">
+                            <img src="img/LOGO_ASG_V-e1614757761806.png" alt="Empresas sostenibles">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Introducción al ASG</h3>
+                    <p>Conoce el concepto ASG (Ambiental, Social y Gobernanza) y cómo aplicarlo en tu empresa para
+                        mejorar la sostenibilidad y responsabilidad corporativa.</p>
+                </article>
 
-            <h3>Producción sostenible</h3>
-            <ul>
-                <li>Economía circular
-                    <ul>
-                        <li>Reutilización de materiales</li>
-                        <li>Reducción de residuos</li>
-                    </ul>
-                </li>
-                <li>Ecodiseño</li>
-                <li>Reciclaje</li>
-            </ul>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria"
+                            target="_blank">
+                            <img src="img/los-principios-del-diseno-sostenible.png" alt="Ecodiseño y reciclaje">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Diseño y producción sostenible</h3>
+                    <p>Implementa la economía circular, ecodiseño y reciclaje en tus procesos productivos para reducir
+                        residuos y mejorar tu impacto ambiental.</p>
+                </article>
 
-            <table border="1">
-                <tr>
-                    <th>Certificación</th>
-                    <th>Objetivo</th>
-                </tr>
-                <tr>
-                    <td>ISO 14001</td>
-                    <td>Gestión ambiental</td>
-                </tr>
-                <tr>
-                    <td>EMAS</td>
-                    <td>Mejora ambiental continua</td>
-                </tr>
-                <tr>
-                    <td>Fair Trade</td>
-                    <td>Comercio justo</td>
-                </tr>
-            </table>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/actualidad/noticias" target="_blank">
+                            <img src="img/certificado-sostenibilidad-1200x630.original.jpg"
+                                alt="Certificaciones sostenibles">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Certificaciones sostenibles</h3>
+                    <p>Infórmate sobre certificaciones como ISO 14001, EMAS o Fair Trade para demostrar tu compromiso
+                        ambiental y social.</p>
+                </article>
+
+            </div>
         </section>
 
+
         <section>
-            <h2>Ciudadanos</h2>
+            <h2>Consejos para Ciudadanos</h2>
+            <div class="card-grid">
 
-            <dl>
-                <dt>ODS</dt>
-                <dd>Objetivos de Desarrollo Sostenible de la ONU</dd>
-            </dl>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/ca/serveis/medi-ambient-i-sostenibilitat" target="_blank">
+                            <img src="img/7-publicaciones-ODS-1.jpg" alt="ODS">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Contribuye a los ODS</h3>
+                    <p>Aprende sobre los Objetivos de Desarrollo Sostenible (ODS) y cómo tus acciones diarias, como
+                        ahorrar agua o separar residuos, ayudan a alcanzarlos.</p>
+                </article>
 
-            <ol>
-                <li>Ahorrar agua</li>
-                <li>Separar residuos</li>
-                <li>Consumir productos locales</li>
-            </ol>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria"
+                            target="_blank">
+                            <img src="img/huella-carbono-infografia.jpg" alt="Reducir huella de carbono">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Reducir la huella de carbono</h3>
+                    <p>Usa transporte público, bicicleta o camina más, reduce plásticos y practica el compostaje para
+                        disminuir tu impacto ambiental.</p>
+                </article>
 
-            <p>
-                Para reducir la huella de carbono se recomienda el uso del transporte público,
-                evitar plásticos y realizar compostaje.
-            </p>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/ca/serveis/medi-ambient-i-sostenibilitat" target="_blank">
+                            <img src="img/los-principios-del-diseno-sostenible.png"
+                                alt="Diseño y producción sostenible">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Programas municipales</h3>
+                    <p>Descubre talleres, subvenciones y puntos de recogida que ofrece el Ayuntamiento para facilitar
+                        hábitos sostenibles y responsables con el medio ambiente.</p>
+                </article>
 
-            <p>
-                El Ayuntamiento de Mollet ofrece <strong>subvenciones</strong>,
-                <em>talleres</em> y puntos de recogida sostenible.
-            </p>
+            </div>
+            <h2>Recursos y buenas prácticas</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/actualidad/noticias" target="_blank">
+                            <img src="img/certificado-sostenibilidad-1200x630.original.jpg" alt="Noticias sostenibles">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Noticias sostenibles</h3>
+                    <p>Consulta las últimas noticias del Ayuntamiento sobre medio ambiente y sostenibilidad, eventos y
+                        proyectos locales.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad"
+                            target="_blank">
+                            <img src="img/hospitalEnergetico.jpeg" alt="Energías renovables">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Energías renovables</h3>
+                    <p>Descubre las iniciativas municipales para fomentar energías limpias, eficiencia energética y
+                        reducción de emisiones.</p>
+                </article>
+            </div>
         </section>
-
     </main>
 
-    <footer>
-        <p>Mollet del Vallès · Comprometidos con la sostenibilidad</p>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h4>Ayuntamiento</h4>
+                <p>Mollet del Vallès</p>
+                <p>Área de Medio Ambiente</p>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <p>info@molletvalles.cat</p>
+                <p>Tel. 93 571 95 00</p>
+            </div>
+            <div>
+                <h4>Redes sociales</h4>
+                <div class="social">
+                    <img src="img/images.png" alt="Facebook">
+                    <img src="img/X_icon.svg.png" alt="X">
+                    <img src="img/pngtree-instagram-icon-3d-stereo-png-image_6306118.png" alt="Instagram">
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2026 Ayuntamiento de Mollet del Vallès · Proyecto educativo</p>
     </footer>
-
 </body>
 
 </html>
