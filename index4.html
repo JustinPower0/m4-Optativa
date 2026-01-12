@@ -10,17 +10,13 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="header-left">
-            <img src="img/mollet.png" alt="Ayuntamiento de Mollet del Vallès">
-            <h1>Medidas Medioambientales del Ayuntamiento</h1>
-        </div>
-
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        <label for="menu-toggle" class="menu-toggle">☰</label>
-
-        <nav>
-            <ul class="menu">
+    <header class="site-header">
+        <div class="header-left"> <img src="img/mollet.png" alt="Ayuntamiento de Mollet del Vallès">
+            <h1>Ayuntamiento de Mollet del Vallès</h1>
+        </div> <!-- Menú hamburguesa --> <input type="checkbox" id="menu-toggle" class="menu-checkbox"> <label
+            for="menu-toggle" class="menu-toggle">☰</label> <!-- NAV con clase correcta -->
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
                 <li><a href="index1.html">Inicio</a></li>
                 <li><a href="index2.html">Contacto</a></li>
                 <li><a href="index3.html">Galería</a></li>
@@ -98,17 +94,33 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Ayuntamiento de Mollet del Vallès</p>
-        <p>
-            <a href="https://www.molletvalles.cat" target="_blank">Sitio oficial</a> |
-            <a href="mailto:info@molletvalles.cat">Contacto</a>
-        </p>
-        <div class="social">
-            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h4>Ayuntamiento</h4>
+                <p>Mollet del Vallès</p>
+                <p>Área de Medio Ambiente</p>
+            </div>
+
+            <div>
+                <h4>Contacto</h4>
+                <p>info@molletvalles.cat</p>
+                <p>Tel. 93 571 95 00</p>
+            </div>
+
+            <div>
+                <h4>Redes sociales</h4>
+                <div class="social">
+                    <img src="img/images.png" alt="">
+                    <img src="img/X_icon.svg.png" alt="">
+                    <img src="img/pngtree-instagram-icon-3d-stereo-png-image_6306118.png" alt="">
+                </div>
+            </div>
         </div>
+
+        <p class="footer-bottom">
+            © 2026 Ayuntamiento de Mollet del Vallès · Proyecto educativo
+        </p>
     </footer>
 
 </body>
