@@ -1,9 +1,9 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,227 +12,245 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
     background: #f2f2f2;
-    flex-wrap: wrap;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    border-bottom: 2px solid #ccc;
+    overflow: hidden;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    float: left;
 }
 
 .header-left img {
-    height: 80px;
+    width: 70px;
+    vertical-align: middle;
 }
 
-.menu-checkbox {
-    display: none;
+.header-left h1 {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    vertical-align: middle;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
+.menu-right {
+    float: right;
 }
 
 .menu {
     list-style: none;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+}
+
+.menu li {
+    display: inline-block;
 }
 
 .menu a {
-    text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 14px;
     background: #388e3c;
-    color: white;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    margin-left: 5px;
 }
 
 .menu a:hover {
     background: #66bb6a;
 }
 
-/* MAIN */
+/* ================= MAIN ================= */
 main {
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px;
+    width: 95%;
+    margin: 20px auto;
 }
 
 section {
-    background: white;
+    background: #fff;
     padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
 }
 
 section h2 {
-    margin-bottom: 20px;
     text-align: center;
     color: #2e7d32;
+    margin-bottom: 20px;
 }
 
-/* NEWS - Imagen izquierda, texto derecha */
-.news-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+/* ================= QUITAR CAJA SOLO EN DATOS DE CONTACTO ================= */
+.sin-cuadro {
+    background: none !important;
+    border: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
+/* ================= NOTICIAS ================= */
 .news {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    align-items: flex-start;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.news-img {
-    position: relative;
-    flex: 0 0 400px;
     overflow: hidden;
-    border-radius: 8px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-.news-img img {
+.news-item {
+    display: inline-block;
+    width: 48%;
+    margin: 10px 1%;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.03);
+}
+
+.news-item img {
     width: 100%;
-    height: 220px;
+    height: 160px;
     object-fit: cover;
+}
+
+.news-content {
+    padding: 10px;
+}
+
+.news-content h3 {
+    color: #2e7d32;
+    margin-bottom: 8px;
+}
+
+.news-content a {
+    text-decoration: none;
+    color: #2e7d32;
     display: block;
-    transition: transform 0.4s ease;
+    margin-top: 5px;
 }
 
-.news-img:hover img {
-    transform: scale(1.05);
+.news-content a:hover {
+    text-decoration: underline;
 }
 
-/* CARD (Próximos eventos y Educación ambiental) */
+/* ================= CARDS ================= */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
+    text-align: center;
 }
 
 .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    width: 550px;
+    margin: 20px;
+    height: 360px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card-img {
-    position: relative;
+    width: 100%;
+    height: 160px;
     overflow: hidden;
 }
 
 .card-img img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.card-img:hover img {
-    transform: scale(1.05);
-}
-
-/* OVERLAY COMÚN PARA NEWS Y CARD */
-.news-img .img-overlay,
-.card-img .img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 8px;
+    object-fit: cover;
 }
 
-.news-img:hover .img-overlay,
-.card-img:hover .img-overlay {
-    opacity: 1;
-}
-
-.img-overlay h3 {
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 5px;
-}
-
-/* TEXTOS NEWS */
-.news-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.news-text h3 {
-    font-size: 1.5rem;
-    color: #388e3c;
-    margin-bottom: 12px;
-}
-
-.news-text p {
-    font-size: 1.05rem;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-/* TEXTOS CARD */
 .card-title {
+    margin: 10px;
+    color: #2e7d32;
+}
+
+/* ================= TABLAS ================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
     text-align: center;
-    font-size: 1.2rem;
-    margin: 10px 0;
-    color: #388e3c;
 }
 
-.card p {
-    padding: 0 15px 15px 15px;
-    flex-grow: 1;
-    text-align: justify;
+th {
+    background: #c8e6c9;
 }
 
-/* FOOTER */
+/* ================= FORMULARIOS ================= */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #888;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: auto;
+    padding: 8px 15px;
+    margin-top: 15px;
+    background: #388e3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #66bb6a;
+}
+
+/* ================= MAPA ================= */
+iframe {
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+}
+
+/* ================= FOOTER ================= */
 .site-footer {
     background: #940d0d;
-    color: white;
-    padding: 40px 20px 20px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.footer-grid {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+.footer-box {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    text-align: left;
+    vertical-align: top;
 }
 
-.site-footer h4 {
+.footer-box h4 {
     margin-bottom: 10px;
     color: #c8e6c9;
 }
@@ -243,41 +261,12 @@ section h2 {
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu {
-        flex-direction: column;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        margin-top: 10px;
-    }
-
-    .menu-checkbox:checked+.menu-toggle+.main-nav .menu {
-        max-height: 600px;
-    }
-
-    /* Noticias se apilan verticalmente en móvil */
-    .news {
-        flex-direction: column;
-    }
-
-    .news-img {
-        width: 100%;
-    }
-
-    .news-img img {
-        height: 200px;
-    }
+/* ================= CONTACTO ================= */
+.contacto-datos>* {
+    margin-left: 20px;
 }

@@ -10,16 +10,14 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="site-header">
         <div class="header-left">
             <img src="img/mollet.png" alt="Escudo Ayuntamiento de Mollet del Vallès">
             <h1>Ayuntamiento de Mollet del Vallès</h1>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        <label for="menu-toggle" class="menu-toggle">☰</label>
-
-        <nav class="main-nav">
+        <nav class="menu-right">
             <ul class="menu">
                 <li><a href="index1.html">Inicio</a></li>
                 <li><a href="index2.html">Contacto</a></li>
@@ -31,56 +29,54 @@
         </nav>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main>
 
+        <!-- NOTICIAS -->
+        <!-- NOTICIAS -->
         <section>
             <h2>Noticias medioambientales</h2>
 
-            <div class="news-container">
-                <article class="news">
-                    <div class="news-img">
-                        <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad"
-                            target="_blank">
-                            <img src="img/Contenedor-inteligente.jpg" alt="Compartición de excedentes energéticos">
-                            <div class="img-overlay">
-                                <h3>Compartición de excedentes energéticos</h3>
-                            </div>
+            <div class="card-grid">
+
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/actualidad/noticias" target="_blank">
+                            <img src="img/hospitalEnergetico.jpeg" alt="Excedentes energéticos">
                         </a>
                     </div>
-                    <div class="news-text">
-                        <h3>Compartición de excedentes energéticos</h3>
-                        <p>
-                            El Ayuntamiento de Mollet del Vallès ha iniciado un sistema innovador
-                            que permite compartir los excedentes de energía solar generados en
-                            edificios municipales con la ciudadanía. Esta medida fomenta el
-                            autoconsumo colectivo, reduce la huella de carbono y refuerza la
-                            transición hacia un modelo energético más sostenible.
-                        </p>
-                    </div>
+                    <h3 class="card-title">Compartición de excedentes energéticos</h3>
+                    <p>
+                        El Ayuntamiento de Mollet del Vallès ha iniciado un sistema innovador
+                        que permite compartir los excedentes de energía solar generados en
+                        edificios municipales con la ciudadanía.
+                    </p>
+                    <a href="https://www.molletvalles.cat/es/actualidad/noticias" target="_blank">
+                    </a>
                 </article>
 
-                <article class="news">
-                    <div class="news-img">
-                        <a href="https://www.molletvalles.cat/es/actualidad/noticias" target="_blank">
-                            <img src="img/dsc-0260_23_1200x630.jpeg" alt="Nuevo bus urbano sostenible">
-                            <div class="img-overlay">
-                                <h3>Nuevo bus urbano sostenible</h3>
-                            </div>
+                <article class="card">
+                    <div class="card-img">
+                        <a href="https://www.molletvalles.cat/es/servicios/movilidad-sostenible" target="_blank">
+                            <img src="img/autobus.jpeg" alt="Bus urbano sostenible">
                         </a>
                     </div>
-                    <div class="news-text">
-                        <h3>Nuevo bus urbano sostenible</h3>
-                        <p>
-                            La ampliación de la flota de autobuses urbanos con vehículos de bajas
-                            emisiones mejora la calidad del aire, reduce el tráfico privado y
-                            promueve una movilidad más eficiente y accesible para toda la
-                            ciudadanía.
-                        </p>
-                    </div>
+                    <h3 class="card-title">Nuevo bus urbano sostenible</h3>
+                    <p>
+                        La ampliación de la flota de autobuses urbanos con vehículos de bajas
+                        emisiones mejora la calidad del aire y promueve una movilidad más
+                        eficiente.
+                    </p>
+                    <a href="https://www.molletvalles.cat/es/servicios/movilidad-sostenible" target="_blank">
+
+                    </a>
                 </article>
+
             </div>
         </section>
 
+
+        <!-- EVENTOS -->
         <section>
             <h2>Próximos eventos</h2>
 
@@ -91,9 +87,6 @@
                         <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad"
                             target="_blank">
                             <img src="img/festa-arbre1.jpg" alt="Fiesta Verde">
-                            <div class="img-overlay">
-                                <h3>Fiesta Verde</h3>
-                            </div>
                         </a>
                     </div>
                     <h3 class="card-title">Fiesta Verde</h3>
@@ -108,9 +101,6 @@
                         <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad"
                             target="_blank">
                             <img src="img/IMG-20241002-WA0007-1024x768.jpg" alt="Movilidad sostenible">
-                            <div class="img-overlay">
-                                <h3>Movilidad sostenible</h3>
-                            </div>
                         </a>
                     </div>
                     <h3 class="card-title">Movilidad sostenible</h3>
@@ -125,9 +115,6 @@
                         <a href="https://www.molletvalles.cat/es/servicios/gestion-de-residuos-y-limpieza-viaria"
                             target="_blank">
                             <img src="img/mollet-del-valles-escombraries_24_1200x675.jpeg" alt="Taller de reciclaje">
-                            <div class="img-overlay">
-                                <h3>Taller de reciclaje</h3>
-                            </div>
                         </a>
                     </div>
                     <h3 class="card-title">Taller de reciclaje</h3>
@@ -140,6 +127,7 @@
             </div>
         </section>
 
+        <!-- EDUCACIÓN AMBIENTAL -->
         <section>
             <h2>Educación ambiental</h2>
 
@@ -150,9 +138,6 @@
                         <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilidad/educacion-y-sensibilizacion-ambiental"
                             target="_blank">
                             <img src="img/tablet.jpg" alt="Biodiversidad urbana">
-                            <div class="img-overlay">
-                                <h3>Biodiversidad urbana</h3>
-                            </div>
                         </a>
                     </div>
                     <h3 class="card-title">Biodiversidad urbana</h3>
@@ -167,9 +152,6 @@
                         <a href="https://www.molletvalles.cat/es/servicios/medio-ambiente-y-sostenibilitat"
                             target="_blank">
                             <img src="img/hospitalEnergetico.jpeg" alt="Energías renovables">
-                            <div class="img-overlay">
-                                <h3>Energías renovables</h3>
-                            </div>
                         </a>
                     </div>
                     <h3 class="card-title">Energías renovables</h3>
@@ -184,33 +166,30 @@
 
     </main>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="footer-grid">
-            <div>
-                <h4>Ayuntamiento</h4>
-                <p>Mollet del Vallès</p>
-                <p>Área de Medio Ambiente</p>
-            </div>
+        <div class="footer-box">
+            <h4>Ayuntamiento</h4>
+            <p>Mollet del Vallès</p>
+            <p>Área de Medio Ambiente</p>
+        </div>
 
-            <div>
-                <h4>Contacto</h4>
-                <p>info@molletvalles.cat</p>
-                <p>Tel. 93 571 95 00</p>
-            </div>
+        <div class="footer-box">
+            <h4>Contacto</h4>
+            <p>info@molletvalles.cat</p>
+            <p>Tel. 93 571 95 00</p>
+        </div>
 
-            <div>
-                <h4>Redes sociales</h4>
-                <div class="social">
-                    <img src="img/images.png" alt="">
-                    <img src="img/X_icon.svg.png" alt="">
-                    <img src="img/pngtree-instagram-icon-3d-stereo-png-image_6306118.png" alt="">
-                </div>
+        <div class="footer-box">
+            <h4>Redes sociales</h4>
+            <div class="social">
+                <img src="img/images.png" alt="Facebook">
+                <img src="img/X_icon.svg.png" alt="Twitter">
+                <img src="img/pngtree-instagram-icon-3d-stereo-png-image_6306118.png" alt="Instagram">
             </div>
         </div>
 
-        <p class="footer-bottom">
-            © 2026 Ayuntamiento de Mollet del Vallès · Proyecto educativo
-        </p>
+        <p class="footer-bottom">© 2026 Ayuntamiento de Mollet del Vallès · Proyecto educativo</p>
     </footer>
 
 </body>
