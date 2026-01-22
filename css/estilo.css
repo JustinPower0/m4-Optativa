@@ -80,14 +80,6 @@ section h2 {
   margin-bottom: 20px;
 }
 
-/* ================= QUITAR CAJA SOLO EN DATOS DE CONTACTO ================= */
-.sin-cuadro {
-  background: none !important;
-  border: none !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
 /* ================= NOTICIAS ================= */
 .news {
   overflow: hidden;
@@ -227,11 +219,26 @@ input[type="reset"]:hover {
 }
 
 /* ================= MAPA ================= */
-iframe {
-  border: 0;
+.bloque-mapa {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bloque-mapa h2 {
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.bloque-mapa p {
+  margin-bottom: 15px;
+}
+
+.bloque-mapa iframe {
   width: 100%;
-  max-width: 400px;
   height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 /* ================= FOOTER ================= */
@@ -269,4 +276,111 @@ iframe {
 /* ================= CONTACTO ================= */
 .contacto-datos > * {
   margin-left: 20px;
+}
+
+/* =========== COLUMNAS CONTACTO ========== */
+.columna-contacto {
+  float: left;
+  width: 48%;
+}
+.columna-horario {
+  float: right;
+  width: 48%;
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+
+/* =========== TABLA CONTACTO + TITULO =========*/
+.tabla-horario {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.tabla-horario th,
+.tabla-horario td {
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.tabla-horario th {
+  background: #c8e6c9;
+}
+
+.titulo-horario {
+  text-align: center;
+  margin-top: 25px;
+  color: #2e7d32;
+}
+
+/* =========== COLUMNAS CONTACTO ========== */
+.columna-contacto {
+  float: left;
+  width: 48%;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.columna-horario {
+  float: right;
+  width: 48%;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* =========== TITULOS ALINEADOS ========== */
+.columna-contacto h2,
+.columna-horario h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #2e7d32;
+  text-align: center;
+}
+
+/* =========== LISTA AJUSTADA ========== */
+.columna-contacto ul {
+  padding-left: 25px;
+  margin-left: 10px;
+  list-style-position: outside;
+}
+
+/* =========== LISTADO MEDIDAS =========*/
+.lista-acciones {
+  width: 80%;
+  margin-left: 40px;
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-position: outside;
+}
+
+/* =========== IMAGENES MEDIDAS =========*/
+.galeria-medidas {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.galeria-medidas img {
+  width: 260px;
+  height: 180px;
+  object-fit: cover;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* =========== LISTA ODS =========*/
+.lista-ods {
+  width: 75%;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding-left: 20px;
+  list-style-position: outside;
 }
